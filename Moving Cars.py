@@ -124,7 +124,7 @@ def main():
     sun.draw(win)
 
     # opens input text file
-    with open('hw5_input.txt','r') as file:
+    with open('buildings_input.txt','r') as file:
         # reading each line
         for line in file:
             coordinates=[]

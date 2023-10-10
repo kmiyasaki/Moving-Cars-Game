@@ -1,12 +1,3 @@
-# hw5.py
-# this program opens an interactive graphics window that allows the user to
-# click moving cars to score points. the smaller the car clicked, the more
-# points added to the total score. a dictionary is displayed at the bottom
-# of the screen that shows the number of each color car clicked. the user
-# can pause and exit the game.
-
-# by Kalia Miyasaki
-
 from graphics import *
 import time
 import random
@@ -96,11 +87,6 @@ def draw_buildings(win, p1_x,p1_y,p2_x,p2_y,color):
     shape.setFill(color)
     shape.draw(win)
 
-# main: function to open graphics window, build background, read text file
-#       to draw buildings, draw bottom buttons and text, creates infinite
-#       loop that allows for car generation and movement, creates different
-#       states for the initial screen, pause screen, and game screen,
-#       calculates score and color dictionary.
 def main():
     win = GraphWin("Moving Cars", 800, 600)
     win.setCoords(0, 0, 40, 40)
